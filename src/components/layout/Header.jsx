@@ -1,6 +1,7 @@
 "use client"; // This component needs interactivity (state for mobile menu)
 
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi"; // Using react-icons
@@ -43,7 +44,7 @@ export default function Header() {
               href="/"
               className="text-2xl font-bold font-montserrat text-brand-black"
             >
-              Käzmo Supply Co
+              <Image src={"/logo.png"} width={100} height={180} alt="Logo" />
             </Link>
           </div>
 
